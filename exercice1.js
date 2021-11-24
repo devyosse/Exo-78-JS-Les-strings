@@ -10,12 +10,14 @@ console.log(monTexte)
 let position = monTexte.indexOf("i");
 document.getElementById('position').innerHTML = position;
 
-let lettre = monTexte.toUpperCase();
-console.log(lettre);
+let letter = monTexte.toUpperCase();
+console.log(letter);
 
-document.getElementById('chaineMaj').innerHTML = lettre;
+document.getElementById('chaineMaj').innerHTML = letter;
 
 for(let i= 0; i<monTexte.length; i++){
-    alert(monTexte[i] === 'a');
+   if(letter.includes('A')){
+       alert(monTexte[i]);
+   }
 }
 
